@@ -21,5 +21,6 @@ let package = Package(
       name: "FoundationExtTests",
       dependencies: ["FoundationExt"]
     ),
+    .target(name: "SwiftUIExt"),
   ]
 )
