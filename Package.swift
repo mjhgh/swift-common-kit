@@ -11,6 +11,8 @@ let package = Package(
     // .library(
     //   name: "SwiftCommonKit",
     //   targets: ["SwiftCommonKit"])
+    .library(name: "FoundationExt", targets: ["FoundationExt"]),
+    .library(name: "SwiftUIExt", targets: ["SwiftUIExt"]),
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
