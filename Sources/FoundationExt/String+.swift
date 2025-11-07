@@ -5,4 +5,17 @@ extension String {
   public var asURL: URL? {
     return URL(string: self)
   }
+  public var asInt: Int? {
+    return Int(self)
+  }
+  public var asDouble: Double? {
+    return Double(self)
+  }
+
+  public func removingTrailingLinebreak() -> String {
+    if self.hasSuffix("\n") {
+      return String(self.dropLast())
+    }
+    return self
+  }
 }
