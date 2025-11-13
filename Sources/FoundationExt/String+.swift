@@ -30,7 +30,7 @@ extension String {
         .documentType: NSAttributedString.DocumentType.html,
         .characterEncoding: String.Encoding.utf8.rawValue,
       ]
-      if let attributedString = try? NSAttributedString(
+      if let attributedString = NSAttributedString(
         html: data, options: options, documentAttributes: nil)
       {
         return attributedString.string
